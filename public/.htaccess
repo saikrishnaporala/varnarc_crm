@@ -16,9 +16,7 @@
     RewriteRule ^ %1 [L,R=301]
 
     # Allow access to storage folder (symlink to storage/app/public)
-    RewriteCond %{REQUEST_URI} ^/storage/(.*)$
-    RewriteCond %{REQUEST_FILENAME} -f
-    RewriteRule ^storage/(.*)$ storage/$1 [L]
+    RewriteRule ^storage/(.*)$ ../storage/app/public/$1 [L]
 
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
