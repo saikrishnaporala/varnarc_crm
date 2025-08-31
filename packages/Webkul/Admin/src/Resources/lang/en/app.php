@@ -2368,6 +2368,7 @@ return [
         'warehouses-info'      => 'Add, edit or delete warehouses from CRM',
         'data_transfer'        => 'Data Transfer',
         'data_transfer_info'   => 'Manage persons, products and leads data transfer related settings in the CRM',
+        'artisan-runner'       => 'Artisan Runner'
     ],
 
     'user' => [
@@ -2455,5 +2456,71 @@ return [
         'no-records' => 'Nothing to export',
         'xls'        => 'XLS',
         'xlsx'       => 'XLSX',
+    ],
+    'artisan-runner' => [
+        'index' => [
+            'title'          => 'Artisan Runner',
+            'create-btn'     => 'Create Product',
+            'create-success' => 'Product created successfully.',
+            'update-success' => 'Product updated successfully.',
+            'delete-success' => 'Product deleted successfully.',
+            'delete-failed'  => 'Product can not be deleted.',
+            'command'        => 'Command',
+            'run-btn'        => 'Run',
+            'output'         => 'Output',
+            'datagrid'   => [
+                'allocated' => 'Allocated',
+                'delete'    => 'Delete',
+                'edit'      => 'Edit',
+                'id'        => 'ID',
+                'in-stock'  => 'In Stock',
+                'name'      => 'Name',
+                'on-hand'   => 'On Hand',
+                'tag-name'  => 'Tag Name',
+                'price'     => 'Price',
+                'sku'       => 'SKU',
+                'view'      => 'View',
+            ],
+        ],
+
+        'create' => [
+            'save-btn'  => 'Save Products',
+            'title'     => 'Create Products',
+            'general'   => 'General',
+            'price'     => 'Price',
+        ],
+
+        'edit' => [
+            'title'     => 'Edit Products',
+            'save-btn'  => 'Save Products',
+            'general'   => 'General',
+            'price'     => 'Price',
+        ],
+
+        'view' => [
+            'sku'         => 'SKU',
+            'all'         => 'All',
+            'notes'       => 'Notes',
+            'files'       => 'Files',
+            'inventories' => 'Inventory',
+            'change-logs' => 'Changelogs',
+
+            'attributes' => [
+                'about-product' => 'About Product',
+            ],
+
+            'inventory' => [
+                'source'     => 'Source',
+                'in-stock'   => 'In Stock',
+                'allocated'  => 'Allocated',
+                'on-hand'    => 'On Hand',
+                'actions'    => 'Actions',
+                'assign'     => 'Assign',
+                'add-source' => 'Add Source',
+                'location'   => 'Location',
+                'add-more'   => 'Add More',
+                'save'       => 'Save',
+            ],
+        ],
     ],
 ];

@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +15,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/artisan-runner', [\Webkul\Admin\Http\Controllers\ArtisanRunnerController::class, 'index'])
+    ->defaults('_config', ['view' => 'admin::artisan-runner.index'])
+    ->name('admin.artisan-runner');
+
+Route::post('/artisan-runner/run', [\Webkul\Admin\Http\Controllers\ArtisanRunnerController::class, 'run'])
+    ->name('admin.artisan-runner.run');
